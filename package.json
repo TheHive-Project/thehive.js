@@ -1,0 +1,48 @@
+{
+  "name": "thehive.js",
+  "version": "1.0.0",
+  "description": "A Javascript library for TheHive and Cortex projects",
+  "main": "lib/thehive.min.js",
+  "scripts": {
+    "build": "webpack --env build",
+    "dev": "webpack --progress --colors --watch --env dev",
+    "test": "mocha --compilers js:babel-core/register --colors ./test/*.spec.js",
+    "test:watch": "mocha --compilers js:babel-core/register --colors -w ./test/*.spec.js"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.0",
+    "babel-eslint": "8.1.2",
+    "babel-loader": "7.1.2",
+    "babel-plugin-add-module-exports": "0.2.1",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-es2015": "6.24.1",
+    "chai": "4.1.2",
+    "eslint": "4.14.0",
+    "eslint-loader": "1.9.0",
+    "mocha": "4.0.1",
+    "webpack": "3.10.0",
+    "yargs": "10.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheHive-Project/thehive.js.git"
+  },
+  "keywords": ["thehive", "cortex", "dfir", "rest", "api", "javascript"],
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/TheHive-Project/thehive.js/issues"
+  },
+  "homepage": "https://github.com/TheHive-Project/thehive.js",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "babel-polyfill": "^6.26.0",
+    "base64-js": "^1.2.1",
+    "hapi": "^17.2.0",
+    "https": "^1.0.0",
+    "ieee754": "^1.1.8",
+    "isarray": "^2.0.2",
+    "lodash": "^4.17.4",
+    "q": "^1.5.1"
+  }
+}
